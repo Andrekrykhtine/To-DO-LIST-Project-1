@@ -5,16 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <h1>Lista de Tarefas</h1>
-    <div id="task-container">
-        <input type="text" id="new-task" placeholder="Digite uma tarefa...">
-        <button id="add-task-btn">Adicionar Tarefa</button>
-        <ul id="task-list"></ul>
+    <div class="container">
+        <h1>Lista de Tarefas</h1>
+        <div id="task-container">
+            <input type="text" id="new-task" placeholder="Digite uma tarefa...">
+            <button id="add-task-btn">Adicionar Tarefa</button>
+            <ul id="task-list"></ul>
+        </div>
+        <div class="sticky-notes">
+            <div class="note box-amarelo">
+                <input type="checkbox"> Tarefa                 <p>Tarefa médio importante</p>
+            </div>
+            <div class="note box-verde">
+                <input type="checkbox"> Tarefa
+                <p>Tarefa pouco importante</p>
+            </div>
+            <div class="note box-vermelho">
+                <input type="checkbox"> Tarefa 
+                <p>Tarefa muito importante</p>
+            </div>
+        </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 
